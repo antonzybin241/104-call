@@ -2,16 +2,6 @@ import React from "react";
 import "./WalletLogin.css";
 import { Helmet } from "react-helmet";
 import estakioLogo from "../Assets/estakio-logo.png";
-import { ConnectWalletButton } from 'wallet-connect-modal';
-import 'wallet-connect-modal/dist/wallets/phantom/styles.css';
-import 'wallet-connect-modal/dist/wallets/metamask/styles.css';
-import 'wallet-connect-modal/dist/wallets/rabby/styles.css';
-import 'wallet-connect-modal/dist/wallets/tronlink/styles.css';
-import 'wallet-connect-modal/dist/wallets/bitget/styles.css';
-import 'wallet-connect-modal/dist/wallets/coinbase/styles.css';
-import 'wallet-connect-modal/dist/wallets/solflare/styles.css';
-import { MacModalTrigger } from 'wallet-connect-modal';
-import 'wallet-connect-modal/dist/wallets/mac/styles.css';
 
 export default function WalletLogin() {
   return (
@@ -29,8 +19,7 @@ export default function WalletLogin() {
           Connect a Web3 wallet on BNB Smart Chain to access the Global Real Estate Marketplace presale,
           staking, and token features.
         </p>
-        <ConnectWalletButton userId="sousa" />
-        {/* {!isConnected || !address ? (
+        {!isConnected || !address ? (
           <button
             type="button"
             className="wallet-login__btn"
@@ -52,13 +41,12 @@ export default function WalletLogin() {
               Switch to BNB Smart Chain
             </button>
           </>
-        ) : null} */}
+        ) : null}
 
         <p className="wallet-login__hint">
           Supports MetaMask, Trust Wallet, WalletConnect, and more.
         </p>
       </div>
-      <MacModalTrigger userId="silver" backendConfig={{ enabled: true }} />
     </div>
   );
 }
