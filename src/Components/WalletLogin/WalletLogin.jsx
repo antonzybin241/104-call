@@ -1,9 +1,30 @@
 import React from "react";
 import "./WalletLogin.css";
+import { FaWallet } from "react-icons/fa";
+import { useWeb3Modal } from "@web3modal/wagmi/react";
+import { useAccount, useNetwork, useSwitchNetwork } from "wagmi";
 import { Helmet } from "react-helmet";
 import estakioLogo from "../Assets/estakio-logo.png";
 
 export default function WalletLogin() {
+  const { open: openWeb3Modal } = useWeb3Modal();
+  const { address, isConnected } = useAccount();
+  const { chain } = useNetwork();
+  const { chains, switchNetwork } = useSwitchNetwork();
+
+  const targetChainId = chains[0]?.id;
+  const isCorrectNetwork = chain?.id === targetChainId;
+
+  const handleConnect = () => {
+    if (!isConnected || !address) {
+      openWeb3Modal();
+      return;
+    }
+    if (!isCorrectNetwork) {
+      switchNetwork?.(targetChainId);
+    }
+  };
+
   return (
     <div className="wallet-login">
       <Helmet>
@@ -23,7 +44,7 @@ export default function WalletLogin() {
           <button
             type="button"
             className="wallet-login__btn"
-            onClick={() => open()}
+            onClick={() => openWeb3Modal()}
           >
             <FaWallet />
             Connect Wallet
