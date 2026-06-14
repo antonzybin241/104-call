@@ -1,0 +1,364 @@
+/* Global Real Estate Marketplace — global responsive & sizing */
+
+:root {
+  --section-y: clamp(1.25rem, 3vw, 2rem);
+  --section-x: clamp(1rem, 2.5vw, 2rem);
+  --container-max: min(94vw, 1520px);
+}
+
+.container,
+.main_header_here .container,
+.main_mata_land .container,
+.main_landing .container,
+.Main_footer_bg .container {
+  max-width: var(--container-max) !important;
+  width: 100%;
+  padding-left: var(--section-x);
+  padding-right: var(--section-x);
+}
+
+/* Section rhythm (hero uses compact rules below) */
+.main_buy_eth,
+.main_transcaion_page,
+.token_nomics_main,
+.main_faq_bbg,
+.realspad-timeline,
+.estakio-timeline,
+.newsletter-tips,
+.newsletter-subscribe,
+.main_token_staking_page {
+  padding-top: var(--section-y) !important;
+  padding-bottom: var(--section-y) !important;
+}
+
+/* Tight hero + presale — avoid stacked padding */
+.main_mata_land {
+  padding: 0.5rem 0 0.75rem !important;
+}
+
+.main_landing,
+.main_div_landing {
+  padding-top: 0.5rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+/* Page headings */
+.main_heading_buy,
+.main_heading_landing,
+.lower_tkn {
+  font-size: clamp(1.35rem, 4.5vw, 2.25rem) !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.upper_tkn {
+  font-size: clamp(0.8rem, 2vw, 1rem) !important;
+  letter-spacing: 0.08em;
+}
+
+.hero-title {
+  font-size: clamp(1.35rem, 4.5vw, 2.25rem) !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.hero-tagline {
+  font-size: clamp(1rem, 2.8vw, 1.5rem) !important;
+  line-height: 1.45 !important;
+  font-weight: 500;
+}
+
+.hero-tagline em {
+  font-style: italic;
+}
+
+/* Hero image */
+.mata_home_page {
+  width: 100% !important;
+  height: auto !important;
+  max-height: min(300px, 38vh);
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+}
+
+.main_div_Text {
+  margin-bottom: 0;
+}
+
+.main_mata_land .row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 0.5rem;
+}
+
+@media (min-width: 1200px) {
+  .main_mata_land .hero-title {
+    font-size: clamp(1.5rem, 2.2vw, 2rem) !important;
+  }
+
+  .mata_home_page {
+    max-height: min(340px, 42vh);
+  }
+}
+
+/* Header */
+.main_header_here .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main_header_here .navbar {
+  width: 100%;
+}
+
+.main_header_here .navbar > .container {
+  flex-wrap: wrap;
+}
+
+.in_resonsive {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: auto !important;
+  margin-left: auto;
+}
+
+.header-menu-toggle {
+  color: var(--text-primary) !important;
+  font-size: 1.75rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.main_logo .site-logo {
+  height: 52px;
+  max-width: min(280px, 72vw);
+  width: auto !important;
+}
+
+@media (max-width: 991.98px) {
+  .main_header_here .navbar-collapse {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 0.75rem;
+    padding: 1rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+  }
+
+  .main_header_here .navbar-collapse:not(.show) {
+    display: none !important;
+  }
+
+  .main_header_here .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .main_header_here .navbar-nav {
+    align-items: stretch !important;
+    gap: 0.25rem;
+  }
+
+  .main_header_here .header_links {
+    display: block;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .main_header_here .wallet_button {
+    display: inline-flex !important;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Landing / presale — full content width */
+.landing_box {
+  padding: clamp(1rem, 2vw, 1.5rem) !important;
+  max-width: 100% !important;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main_landing .pad_side {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.landing_box h1 {
+  font-size: clamp(1.25rem, 3.5vw, 1.75rem) !important;
+  margin-bottom: 1rem;
+}
+
+.info_pre h2 {
+  font-size: clamp(0.75rem, 2.5vw, 1rem) !important;
+  word-break: break-word;
+}
+
+.info_pre h6 {
+  font-size: 0.75rem !important;
+}
+
+.buy_BTN,
+.inner_btn_site:not(.stake-refresh-btn) {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 16px !important;
+  font-size: clamp(0.9rem, 2.5vw, 1rem) !important;
+}
+
+.box_busd,
+.swap_input_b {
+  width: 100%;
+}
+
+.wap_iiinnn {
+  font-size: clamp(1rem, 4vw, 1.25rem) !important;
+}
+
+/* Transaction / ecosystem cards */
+.trns_box_content h2,
+.trns_box_content p,
+.trns_box_content h6 {
+  color: var(--text-primary) !important;
+}
+
+.trans_conent h1 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem) !important;
+  color: var(--text-primary) !important;
+}
+
+.trans_conent h6 {
+  font-size: clamp(1rem, 2.5vw, 1.25rem) !important;
+  color: var(--text-muted) !important;
+}
+
+.trns_box_content {
+  height: auto !important;
+  min-height: 0;
+}
+
+.percentage_totken,
+.token_nomics_main .lower_tkn {
+  color: var(--text-primary) !important;
+}
+
+/* NFT product cards */
+.product_card {
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border-radius: var(--radius-lg) !important;
+}
+
+.firs_ro,
+.secnd_ro,
+.lst_ro {
+  height: auto !important;
+  min-height: 0;
+}
+
+.nft_para {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  line-height: 1.6;
+  color: var(--text-secondary) !important;
+}
+
+/* Timeline mobile */
+@media (max-width: 575.98px) {
+  .estakio-timeline__track {
+    padding-left: 0;
+  }
+
+  .estakio-timeline__track::before {
+    left: 23px;
+  }
+
+  .estakio-timeline__item {
+    grid-template-columns: 48px 1fr;
+    gap: 0.75rem;
+  }
+
+  .estakio-timeline__step {
+    width: 48px;
+    height: 48px;
+    font-size: 0.95rem;
+  }
+}
+
+.Main_footer_bg .col-md-4 img {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .Main_footer_bg .row > [class*="col-"] {
+    margin-bottom: 1.5rem;
+  }
+
+  .Main_footer_bg .social_icons {
+    flex-wrap: wrap;
+  }
+}
+
+/* Staking tables */
+.table-responsive-wrap,
+.MuiTableContainer-root {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.MuiTableCell-root {
+  color: var(--text-primary) !important;
+  font-size: clamp(0.8rem, 2vw, 0.95rem) !important;
+  padding: 10px 8px !important;
+}
+
+/* Wallet login */
+@media (max-width: 480px) {
+  .wallet-login__card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .wallet-login__logo .site-logo {
+    height: 52px;
+    max-width: min(260px, 90vw);
+  }
+
+  .wallet-login__title {
+    font-size: 1.4rem;
+  }
+}
+
+/* Airdrop */
+@media (max-width: 576px) {
+  .copy_input_b,
+  .CopyBTN {
+    width: 100% !important;
+    border-radius: var(--radius-md) !important;
+  }
+}
+
+/* Images global */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll from long strings */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}

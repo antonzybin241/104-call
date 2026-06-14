@@ -1,0 +1,90 @@
+.app-login-only {
+  min-height: 100vh;
+}
+
+.app-login-only .wallet-login {
+  min-height: 100vh;
+}
+
+.wallet-login {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: var(--gradient-hero);
+}
+
+.wallet-login__card {
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-xl);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.wallet-login__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.wallet-login__title {
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.wallet-login__subtitle {
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.wallet-login__btn {
+  width: 100%;
+  max-width: 320px;
+  color: #06080f;
+  background: var(--gradient-primary);
+  border: none;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-md);
+  padding: 14px 24px;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.wallet-login__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.wallet-login__hint {
+  margin-top: 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.wallet-login__connected {
+  margin-top: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-weight: 600;
+}

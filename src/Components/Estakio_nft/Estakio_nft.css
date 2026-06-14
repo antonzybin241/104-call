@@ -1,0 +1,100 @@
+.main_estakio_nft {
+  padding: 1.25rem 0;
+}
+
+.main_estakio_nft--functions {
+  padding-top: 0.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.nft_para {
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  line-height: 1.6;
+  color: var(--text-secondary) !important;
+}
+
+.hw_lis {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 0.35rem;
+}
+
+/* Functions of Reals tokens */
+.token-functions__heading {
+  margin: 0 0 1rem;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.token-functions__row {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.token-functions__row--2 {
+  grid-template-columns: 1fr;
+}
+
+.token-functions__row--3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .token-functions__row--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .token-functions__row--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.token-feature-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  padding: 1rem 1.1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.token-feature-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.token-feature-card--accent {
+  background: var(--gradient-soft);
+  border-color: var(--border-accent);
+}
+
+.token-feature-card__title {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary) !important;
+}
+
+.token-feature-card__text {
+  margin: 0;
+  flex: 1;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-secondary) !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .main_estakio_nft {
+    padding: 1rem 0 !important;
+  }
+}

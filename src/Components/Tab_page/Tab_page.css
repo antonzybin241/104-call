@@ -1,0 +1,98 @@
+.tab_imgss {
+  width: 30px;
+}
+
+.box_busd {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+}
+
+.box_busd p {
+  color: var(--text-muted);
+  margin-bottom: 0;
+  font-size: 0.875rem;
+}
+
+.box_busd input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none !important;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+.buy_BTN {
+  padding: 14px 24px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-md);
+  border: none;
+  color: #06080f;
+  font-weight: 700;
+  margin-top: 1rem;
+  font-family: var(--font-sans);
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.buy_BTN:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-glow);
+}
+
+.bnb_Text {
+  border: 1px solid var(--border) !important;
+  padding: 10px 14px;
+  font-family: var(--font-sans);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.bnb_Text--active {
+  background: var(--gradient-soft) !important;
+  border-color: var(--border-accent) !important;
+}
+
+.balnce_text {
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.first_Box_stking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-family: var(--font-sans);
+}
+
+@media screen and (max-width: 800px) {
+  .bnb_Text {
+    margin-left: 0;
+    width: 115px !important;
+    display: flex;
+    align-items: center;
+  }
+  .bnb_Text img {
+    width: 35%;
+  }
+  .bnb_Text span {
+    font-size: 14px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

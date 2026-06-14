@@ -1,0 +1,89 @@
+/* Global Real Estate Marketplace logo — flat wordmark, larger size */
+
+
+
+.brand-link {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  line-height: 0;
+
+  text-decoration: none;
+
+}
+
+
+
+.site-logo {
+
+  display: block;
+
+  height: 52px;
+
+  width: auto;
+
+  max-width: min(280px, 72vw);
+
+  object-fit: contain;
+
+  object-position: left center;
+
+  mix-blend-mode: lighten;
+
+}
+
+
+
+@media (max-width: 576px) {
+
+  .site-logo {
+
+    height: 44px;
+
+    max-width: min(220px, 78vw);
+
+  }
+
+}
+
+
+
+.wallet-login__logo .site-logo {
+
+  height: 64px;
+
+  max-width: min(320px, 88vw);
+
+  margin: 0 auto;
+
+  object-position: center;
+
+}
+
+
+
+.footer-brand .site-logo {
+
+  height: 48px;
+
+  max-width: 240px;
+
+}
+
+
+
+.mart_logo_wap .site-logo {
+
+  height: 48px;
+
+  max-width: 220px;
+
+  margin: 0 auto;
+
+  object-position: center;
+
+}
+
+

@@ -1,0 +1,59 @@
+:root {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+
+  --bg-app: #06080f;
+  --bg-elevated: #0c1019;
+  --bg-surface: #121826;
+  --bg-card: rgba(18, 24, 38, 0.92);
+  --bg-card-soft: rgba(30, 41, 59, 0.45);
+  --bg-input: rgba(15, 23, 42, 0.8);
+
+  --border: rgba(148, 163, 184, 0.14);
+  --border-strong: rgba(148, 163, 184, 0.28);
+  --border-accent: rgba(34, 211, 238, 0.4);
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --accent: #22d3ee;
+  --accent-hover: #67e8f9;
+  --accent-secondary: #818cf8;
+  --accent-violet: #a78bfa;
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    #22d3ee 0%,
+    #6366f1 50%,
+    #a855f7 100%
+  );
+  --gradient-soft: linear-gradient(
+    135deg,
+    rgba(34, 211, 238, 0.12) 0%,
+    rgba(99, 102, 241, 0.1) 50%,
+    rgba(168, 85, 247, 0.08) 100%
+  );
+  --gradient-hero: radial-gradient(
+      ellipse 80% 60% at 50% -20%,
+      rgba(34, 211, 238, 0.18),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 100% 0%,
+      rgba(99, 102, 241, 0.12),
+      transparent
+    ),
+    var(--bg-app);
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 40px rgba(34, 211, 238, 0.15);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}

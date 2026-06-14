@@ -1,0 +1,82 @@
+.main_token_staking_page {
+  padding: 3rem 0;
+}
+
+.token_staking_box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  height: 100%;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.token_staking_box:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.main_Box_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.mart_logo_wap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.Apr_div {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.swap_input_b {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  padding: 4px;
+  border-radius: var(--radius-md);
+}
+
+.wap_iiinnn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  width: 80%;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
+
+.swap_input_b button {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.swap_clr_btn {
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  color: #06080f;
+  font-weight: 700;
+  width: 100%;
+  padding: 14px;
+  margin-top: 1rem;
+  transition: box-shadow var(--transition);
+}
+
+.swap_clr_btn:hover {
+  box-shadow: var(--shadow-glow);
+}

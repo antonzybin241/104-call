@@ -1,0 +1,51 @@
+.main_mata_land {
+  padding: 0.5rem 0 0.75rem;
+  background: transparent;
+}
+
+.right_text h5 {
+  margin-bottom: 0 !important;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.right_text h6 {
+  margin-bottom: 0 !important;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: clamp(1.1rem, 2.5vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.txt_clr {
+  color: var(--text-primary) !important;
+}
+
+.mata_home_page {
+  width: 100%;
+  height: auto;
+  max-height: min(300px, 38vh);
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-lg);
+  object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+  .main_mata_land .row {
+    text-align: center;
+  }
+
+  .main_mata_land .right_text {
+    order: 2;
+    margin-top: 0.5rem;
+  }
+
+  .main_mata_land .col-md-6:last-child {
+    order: 1;
+  }
+}

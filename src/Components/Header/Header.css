@@ -1,0 +1,89 @@
+.main_headre {
+  background-color: transparent;
+  margin-top: 0;
+  padding: 0.35rem 0 !important;
+}
+
+.main_logo {
+  width: auto;
+  max-width: 300px;
+}
+
+.header_links {
+  color: var(--text-secondary) !important;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 0 4px;
+  white-space: nowrap !important;
+}
+
+.wallet_button {
+  color: var(--accent);
+  background: rgba(34, 211, 238, 0.08);
+  border: 1px solid var(--border-accent);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  padding: 8px 18px !important;
+  transition: all var(--transition);
+}
+
+.wallet_button:hover {
+  background: var(--gradient-primary);
+  color: #06080f;
+  border-color: transparent;
+}
+
+.wallet_button2 {
+  background: rgba(34, 211, 238, 0.08);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  color: var(--accent) !important;
+  border: 1px solid var(--border-accent);
+  padding: 10px 24px !important;
+}
+
+.in_resonsive {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: auto;
+  margin-left: auto;
+}
+
+.header_airdrop_link {
+  color: var(--accent) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .header_links {
+    text-align: center !important;
+  }
+  .main_logo .site-logo {
+    height: 44px;
+    max-width: min(200px, 75vw);
+  }
+}
+
+@media (max-width: 800px) {
+  .wallet_button {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .wallet_button2 {
+    display: none;
+  }
+}

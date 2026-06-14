@@ -1,0 +1,504 @@
+/* Global modern theme overrides */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans) !important;
+  background: var(--bg-app) !important;
+  color: var(--text-primary) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+}
+
+.App {
+  background: var(--gradient-hero);
+  min-height: 100vh;
+}
+
+/* Typography utilities */
+.site_font,
+.txt_clr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+span.site_font {
+  font-family: var(--font-sans) !important;
+}
+
+.txt_clr,
+.main_heading_landing,
+.main_heading_buy,
+.lower_tkn,
+.upper_tkn,
+.info_pre h6,
+.info_pre h2,
+.rate h4,
+.balnce_text,
+.right_text h5,
+.right_text h6,
+.lef_token_stk_co h1,
+.mart_logo_wap,
+.plan_text,
+.faq_par,
+.igniatio,
+.trans_sc h1,
+.lower_tkn,
+.upper_tkn,
+.trns_box_content h6,
+.trns_box_content p,
+.trns_box_content h2,
+.trans_conent h6,
+.trans_conent h1 {
+  color: var(--text-primary) !important;
+}
+
+.trns_box_content {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-lg) !important;
+}
+
+.main_transcaion_page,
+.token_nomics_main {
+  padding: var(--section-y, 1.5rem) var(--section-x, 1rem) !important;
+}
+
+::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 1;
+}
+
+/* Header */
+.main_header_here {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(6, 8, 15, 0.75) !important;
+  border-bottom: 1px solid var(--border);
+}
+
+.main_headre {
+  background: transparent !important;
+  margin-top: 0;
+  padding: 0.35rem 0;
+}
+
+.header_links,
+.header_links a,
+.nav-link {
+  color: var(--text-secondary) !important;
+  font-weight: 500 !important;
+  transition: color var(--transition);
+}
+
+.header_links:hover,
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+.wallet_button,
+.wallet_button2 {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  border-radius: var(--radius-pill) !important;
+  border: 1px solid var(--border-accent) !important;
+  color: var(--accent) !important;
+  background: rgba(34, 211, 238, 0.08) !important;
+  transition: all var(--transition);
+}
+
+.wallet_button:hover,
+.wallet_button2:hover {
+  background: var(--gradient-primary) !important;
+  color: #06080f !important;
+  border-color: transparent !important;
+  box-shadow: var(--shadow-glow);
+}
+
+/* Footer */
+.Main_footer_bg {
+  background: linear-gradient(180deg, transparent, #0a0e17 30%) !important;
+  background-color: #0a0e17 !important;
+  border-top: 1px solid var(--border);
+  padding: 2rem 1rem 1.25rem !important;
+}
+
+.Main_footer_bg .text-white,
+.footer_links,
+.join_c,
+.alli {
+  color: var(--text-secondary) !important;
+}
+
+.footer_links:hover {
+  color: var(--accent) !important;
+}
+
+.around_social {
+  background: var(--bg-surface) !important;
+  border: 1px solid var(--border);
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.around_social:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-accent);
+}
+
+.icons_clr {
+  color: var(--accent) !important;
+}
+
+/* Hero / sections */
+.main_mata_land,
+.main_landing,
+.main_reaspa_here,
+.main_token_staking_page,
+.main_transcaion_page,
+.main_faq_bbg,
+.token_nomics_main,
+.wallet-login {
+  background: transparent !important;
+}
+
+.main_mata_land {
+  padding: 0.5rem 0 0.75rem !important;
+  background: transparent !important;
+}
+
+/* Cards */
+.landing_box,
+.token_staking_box,
+.white_paper_box,
+.black_box,
+.trns_box_content,
+.token_staking_box {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-sm) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.black_box h1,
+.black_box h2,
+.black_box p {
+  color: var(--text-primary) !important;
+}
+
+.black_box p {
+  color: var(--text-muted) !important;
+  font-size: 0.875rem !important;
+}
+
+.landing_box {
+  background: var(--gradient-soft) !important;
+}
+
+.white_paper_box {
+  padding: 1.5rem !important;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.white_paper_box:hover {
+  border-color: var(--border-accent) !important;
+  box-shadow: var(--shadow-glow) !important;
+}
+
+.names_re,
+.white_paper_box p {
+  color: var(--text-secondary) !important;
+}
+
+.cir {
+  background: var(--gradient-primary) !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Progress */
+.progress_bar {
+  background: var(--bg-input) !important;
+  border-radius: var(--radius-pill) !important;
+  overflow: hidden;
+  height: 10px !important;
+  border: 1px solid var(--border);
+}
+
+.inner_pro {
+  background: var(--gradient-primary) !important;
+  border-radius: var(--radius-pill);
+  height: 100%;
+}
+
+/* Buttons */
+.buy_BTN,
+.subs_btn,
+.reward_btn,
+.swap_clr_btn,
+.CopyBTN,
+.wallet-login__btn,
+.air_drop_btns.wallet_button,
+button.copied {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  border: none !important;
+  border-radius: var(--radius-md) !important;
+  background: var(--gradient-primary) !important;
+  color: #06080f !important;
+  transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+}
+
+.buy_BTN:hover,
+.subs_btn:hover,
+.reward_btn:hover,
+.swap_clr_btn:hover,
+.CopyBTN:hover,
+.wallet-login__btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-glow);
+  opacity: 0.95;
+}
+
+.inner_btn_site {
+  background: var(--gradient-primary) !important;
+  color: #06080f !important;
+  border: none !important;
+  border-radius: var(--radius-pill) !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: var(--font-sans) !important;
+}
+
+.inner_btn_site:hover {
+  box-shadow: var(--shadow-glow);
+}
+
+.stake-refresh-btn {
+  width: auto !important;
+  max-width: none !important;
+  min-width: 8.5rem;
+  padding: 12px 28px !important;
+  margin-bottom: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inputs */
+.box_busd,
+.swap_input_b,
+.copy_input_b {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+}
+
+.box_busd p,
+.box_busd input,
+.wap_iiinnn,
+.letter_news {
+  color: var(--text-primary) !important;
+  font-family: var(--font-sans) !important;
+}
+
+.box_busd input,
+.wap_iiinnn,
+.letter_news {
+  background: transparent !important;
+}
+
+.swap_input_b button {
+  color: var(--accent) !important;
+  font-weight: 600;
+}
+
+/* BNB / USDC toggle */
+.bnb_Text {
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+  color: var(--text-secondary) !important;
+  background: var(--bg-input) !important;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.bnb_Text--active {
+  background: var(--gradient-soft) !important;
+  border-color: var(--border-accent) !important;
+  color: var(--text-primary) !important;
+}
+
+.bnb_Text--active span {
+  color: var(--text-primary) !important;
+}
+
+/* Airdrop */
+.singleBoxStyle {
+  background: var(--bg-surface) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-primary) !important;
+  border-radius: var(--radius-md) !important;
+}
+
+.singleBoxStyle:hover {
+  border-color: var(--border-accent) !important;
+}
+
+.copy_input_b {
+  border-radius: var(--radius-md) 0 0 var(--radius-md) !important;
+}
+
+.CopyBTN {
+  border-radius: 0 var(--radius-md) var(--radius-md) 0 !important;
+}
+
+/* FAQ accordion */
+.main_faq_bbg {
+  border-bottom: none !important;
+}
+
+.accordion-item {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+  margin-bottom: 0.75rem !important;
+  overflow: hidden;
+}
+
+.accordion-button {
+  color: var(--text-primary) !important;
+  background: transparent !important;
+  font-weight: 500 !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--accent) !important;
+  background: var(--bg-card-soft) !important;
+}
+
+.accordion-button::after {
+  filter: invert(1) brightness(0.9);
+}
+
+.accordion-body {
+  color: var(--text-secondary) !important;
+}
+
+/* Tables (staking history) */
+.MuiTableCell-head {
+  color: var(--text-muted) !important;
+}
+
+.MuiTableCell-body,
+.text-black {
+  color: var(--text-primary) !important;
+}
+
+.stekss {
+  color: var(--text-primary) !important;
+}
+
+/* Wallet login */
+.wallet-login {
+  background: var(--gradient-hero) !important;
+}
+
+.wallet-login__card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.wallet-login__title {
+  color: var(--text-primary) !important;
+}
+
+.wallet-login__subtitle,
+.wallet-login__hint {
+  color: var(--text-muted) !important;
+}
+
+.wallet-login__connected {
+  color: var(--accent) !important;
+}
+
+/* Swiper / road timeline */
+.Estakio_road h1,
+.timeline_page h1 {
+  color: var(--text-primary) !important;
+}
+
+/* Legacy timeline / newsletter wrappers */
+.main_estakio_rod {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.main_buy_eth {
+  background: transparent !important;
+}
+
+/* Navbar mobile */
+.navbar-toggler {
+  border-color: var(--border);
+}
+
+/* Links */
+a {
+  transition: color var(--transition);
+}
+
+/* Error text */
+p[style*="color: red"],
+.text-danger {
+  color: #f87171 !important;
+}
+
+/* Tokenomics & legacy dark text on cards */
+.token_nomics_main .lower_tkn,
+.token_nomics_main .upper_tkn,
+.token_nomics_main .percentage_totken,
+.upper_tkn {
+  color: var(--text-primary) !important;
+}
+
+.percentage_totken {
+  font-size: clamp(0.85rem, 2vw, 1rem) !important;
+}
+
+/* Presale stat row on small screens */
+@media (max-width: 575.98px) {
+  .landing_box .row .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center !important;
+  }
+
+  .landing_box .row .col-6.text-end {
+    text-align: center !important;
+    margin-top: 0.75rem;
+  }
+}

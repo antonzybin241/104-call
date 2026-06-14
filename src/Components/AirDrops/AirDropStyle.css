@@ -1,0 +1,73 @@
+.mainBoxDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 2rem;
+}
+
+.term_condtions li {
+  list-style-type: decimal;
+  color: var(--text-secondary);
+}
+
+.CopyBTN {
+  background: var(--gradient-primary) !important;
+  color: #06080f !important;
+  padding: 14px 18px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  border: none !important;
+  font-weight: 600;
+}
+
+.copy_input_b {
+  background: var(--bg-input);
+  padding: 4px 0;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+  border: 1px solid var(--border);
+  border-right: none;
+}
+
+.singleBoxStyle {
+  background: var(--bg-surface) !important;
+  color: var(--text-primary) !important;
+  padding: 16px;
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color var(--transition);
+}
+
+.singleBoxStyle div {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+.singleBoxStyle:hover {
+  border-color: var(--border-accent) !important;
+}
+
+.igniatio {
+  font-size: clamp(1.5rem, 3vw, 2rem) !important;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.main_reaspa_here {
+  padding: 2rem 1rem 4rem;
+}
+
+.air_drop_btns {
+  padding: 14px 48px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .air_drop_btns {
+    padding: 12px 24px !important;
+  }
+}

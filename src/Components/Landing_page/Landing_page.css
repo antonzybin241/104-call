@@ -1,0 +1,201 @@
+.main_landing {
+  padding: 0.5rem 0 1.25rem;
+  font-family: var(--font-sans);
+}
+
+.landing_box {
+  background: var(--gradient-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(12px);
+  padding: 1.25rem 1.5rem;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.info_pre h6 {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-family: var(--font-sans);
+}
+
+.info_pre h2 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-family: var(--font-sans);
+}
+
+.rate h4 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: var(--font-sans);
+}
+
+.buy_chain_box {
+  padding: 0.5rem;
+  font-family: var(--font-sans);
+}
+
+/* Stats row — equal cards */
+.landing-stats .stat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 108px;
+  height: 100%;
+  padding: 1rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-card__value {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-sans);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary) !important;
+}
+
+.stat-card__value--compact {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  word-break: break-word;
+}
+
+.stat-card__label {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text-muted) !important;
+  text-transform: none;
+}
+
+/* Referral block */
+.referral-panel {
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.referral-panel__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary) !important;
+  text-align: left;
+}
+
+.referral-copy-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: stretch;
+  margin-bottom: 0.75rem;
+}
+
+.referral-copy-row__input {
+  flex: 1 1 200px;
+  min-width: 0;
+  padding: 0.65rem 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  outline: none;
+}
+
+.referral-copy-row__btn {
+  flex: 0 0 auto;
+  min-width: 5.5rem;
+  padding: 0.65rem 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #06080f;
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.referral-copy-row__btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-glow);
+}
+
+.referral-panel__hint,
+.referral-panel__reward {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--text-secondary) !important;
+  text-align: left;
+}
+
+.referral-panel__reward strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.referral-panel__claim {
+  width: auto !important;
+  max-width: 100%;
+  margin-top: 0.75rem !important;
+  margin-left: 0 !important;
+  padding: 0.7rem 1.5rem !important;
+  font-size: 0.9rem !important;
+  text-transform: none !important;
+}
+
+.white_paper_box {
+  height: 100%;
+  min-height: 120px;
+}
+
+.white_paper_box p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.names_re {
+  font-size: 1.1rem !important;
+  margin-bottom: 0.35rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .main_landing {
+    padding: 2rem 0;
+  }
+  .info_pre h2 {
+    font-size: 1rem;
+  }
+  .pad_side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .referral-panel__claim {
+    width: 100% !important;
+  }
+
+  .referral-copy-row__btn {
+    flex: 1 1 100%;
+  }
+}
